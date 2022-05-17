@@ -1,0 +1,13 @@
+
+# Escolher o retorno do Stacktrace quando estoura um erro em tela
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/loyalty?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
