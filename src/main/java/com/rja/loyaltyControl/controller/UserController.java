@@ -15,14 +15,20 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 	
+	UserController(){}
+	
 	public UserController(UserRepository userRepository) {
-		this.userRepository = userRepository;
 	}
 	
 	@PostMapping
 	public void inclui(User user) {
 		userRepository.save(user);
 	}
+	
+//	@GetMapping
+//	public Dados dados() {
+//		return liveloApiConnection.getDadosLivelo();
+//	}
 	
 	
 }
